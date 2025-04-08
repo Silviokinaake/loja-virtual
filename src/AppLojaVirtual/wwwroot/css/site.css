@@ -1,0 +1,73 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+.form-group {
+    margin-bottom: 15px; 
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.form-inline button {
+    font-weight: bold;
+    background: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 15px;
+    padding: 0;
+}
+
+    .form-inline button:hover {
+        text-decoration: underline;
+        color: #f8f9fa;
+    }
+
+
+.navbar {
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    padding: 15px 30px;
+}
+
+.navbar-nav .nav-link {
+    font-weight: bold;
+    font-size: 16px;
+    color: white !important;
+    margin-left: 15px;
+}
+
+    .navbar-nav .nav-link:hover {
+        text-decoration: underline;
+        color: #f8f9fa !important;
+    }
+
+.form-inline button {
+    font-weight: bold;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+    .form-inline button:hover {
+        text-decoration: underline;
+    }
+

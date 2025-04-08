@@ -1,0 +1,76 @@
+﻿@model IEnumerable<AppLojaVirtual.Models.Produto>
+
+@{
+    ViewData["Title"] = "Lista de produtos";
+}
+
+<h1>@ViewData["Title"] </h1>
+
+@if (TempData["Sucesso"] != null || ViewData["Sucesso"] != null)
+{
+    var mensagem = TempData["Sucesso"] != null ? TempData["Sucesso"] : ViewData["Sucesso"];
+
+    <div styly="padding-top: 15px"></div>
+
+    <div id="msg-box" class="alert alert-success">
+        <h4 id=" msgRetorno">@Html.Raw(mensagem)</h4>
+    </div>
+}
+
+<p>
+    <a class="btn btn-primary" asp-action="Create"><spam class="fa fa-plus"></spam>Novo</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Descricao)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Preco)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.QuantidadeEstoque)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Categoria)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ImagemUrl)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Descricao)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Preco)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.QuantidadeEstoque)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Categoria)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ImagemUrl)
+            </td>
+            <td>
+                <a asp-action="Details" class="btn btn-warning" asp-route-id="@item.Id"><spam class="fa fa-search"></spam>Detalhes</a>
+                <a asp-action="Edit" class="btn btn-info" asp-route-id="@item.Id"><spam class="fa fa-pencil-alt"></spam>Editar</a> 
+                <a asp-action="Delete" class="btn btn-danger" asp-route-id="@item.Id"><spam class="fa fa-trash"></spam>Excluir</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
