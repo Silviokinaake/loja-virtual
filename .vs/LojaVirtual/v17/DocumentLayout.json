@@ -1,45 +1,37 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\MeusProjetos\\LojaVirtual\\",
+  "WorkspaceRootPath": "C:\\LojaVirtual\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BA54D644-E337-4FAD-84D1-8592FB8A7AF6}|src\\AppLojaVirtual\\AppLojaVirtual.csproj|c:\\meusprojetos\\lojavirtual\\src\\applojavirtual\\views\\produtos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BA54D644-E337-4FAD-84D1-8592FB8A7AF6}|src\\AppLojaVirtual\\AppLojaVirtual.csproj|solutionrelative:src\\applojavirtual\\views\\produtos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BA54D644-E337-4FAD-84D1-8592FB8A7AF6}|src\\AppLojaVirtual\\AppLojaVirtual.csproj|c:\\meusprojetos\\lojavirtual\\src\\applojavirtual\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BA54D644-E337-4FAD-84D1-8592FB8A7AF6}|src\\AppLojaVirtual\\AppLojaVirtual.csproj|solutionrelative:src\\applojavirtual\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BA54D644-E337-4FAD-84D1-8592FB8A7AF6}|src\\AppLojaVirtual\\AppLojaVirtual.csproj|c:\\meusprojetos\\lojavirtual\\src\\applojavirtual\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BA54D644-E337-4FAD-84D1-8592FB8A7AF6}|src\\AppLojaVirtual\\AppLojaVirtual.csproj|solutionrelative:src\\applojavirtual\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BA54D644-E337-4FAD-84D1-8592FB8A7AF6}|src\\AppLojaVirtual\\AppLojaVirtual.csproj|c:\\meusprojetos\\lojavirtual\\src\\applojavirtual\\models\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA54D644-E337-4FAD-84D1-8592FB8A7AF6}|src\\AppLojaVirtual\\AppLojaVirtual.csproj|solutionrelative:src\\applojavirtual\\models\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BA54D644-E337-4FAD-84D1-8592FB8A7AF6}|src\\AppLojaVirtual\\AppLojaVirtual.csproj|c:\\meusprojetos\\lojavirtual\\src\\applojavirtual\\controllers\\produtoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA54D644-E337-4FAD-84D1-8592FB8A7AF6}|src\\AppLojaVirtual\\AppLojaVirtual.csproj|solutionrelative:src\\applojavirtual\\controllers\\produtoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BA54D644-E337-4FAD-84D1-8592FB8A7AF6}|src\\AppLojaVirtual\\AppLojaVirtual.csproj|c:\\meusprojetos\\lojavirtual\\src\\applojavirtual\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BA54D644-E337-4FAD-84D1-8592FB8A7AF6}|src\\AppLojaVirtual\\AppLojaVirtual.csproj|c:\\lojavirtual\\src\\applojavirtual\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BA54D644-E337-4FAD-84D1-8592FB8A7AF6}|src\\AppLojaVirtual\\AppLojaVirtual.csproj|solutionrelative:src\\applojavirtual\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BA54D644-E337-4FAD-84D1-8592FB8A7AF6}|src\\AppLojaVirtual\\AppLojaVirtual.csproj|c:\\meusprojetos\\lojavirtual\\src\\applojavirtual\\views\\produtos\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BA54D644-E337-4FAD-84D1-8592FB8A7AF6}|src\\AppLojaVirtual\\AppLojaVirtual.csproj|solutionrelative:src\\applojavirtual\\views\\produtos\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BA54D644-E337-4FAD-84D1-8592FB8A7AF6}|src\\AppLojaVirtual\\AppLojaVirtual.csproj|c:\\meusprojetos\\lojavirtual\\src\\applojavirtual\\views\\produtos\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BA54D644-E337-4FAD-84D1-8592FB8A7AF6}|src\\AppLojaVirtual\\AppLojaVirtual.csproj|solutionrelative:src\\applojavirtual\\views\\produtos\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BA54D644-E337-4FAD-84D1-8592FB8A7AF6}|src\\AppLojaVirtual\\AppLojaVirtual.csproj|c:\\meusprojetos\\lojavirtual\\src\\applojavirtual\\views\\produtos\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{BA54D644-E337-4FAD-84D1-8592FB8A7AF6}|src\\AppLojaVirtual\\AppLojaVirtual.csproj|c:\\lojavirtual\\src\\applojavirtual\\views\\produtos\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{BA54D644-E337-4FAD-84D1-8592FB8A7AF6}|src\\AppLojaVirtual\\AppLojaVirtual.csproj|solutionrelative:src\\applojavirtual\\views\\produtos\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BA54D644-E337-4FAD-84D1-8592FB8A7AF6}|src\\AppLojaVirtual\\AppLojaVirtual.csproj|c:\\meusprojetos\\lojavirtual\\src\\applojavirtual\\views\\produtos\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{BA54D644-E337-4FAD-84D1-8592FB8A7AF6}|src\\AppLojaVirtual\\AppLojaVirtual.csproj|c:\\lojavirtual\\src\\applojavirtual\\controllers\\categoriascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA54D644-E337-4FAD-84D1-8592FB8A7AF6}|src\\AppLojaVirtual\\AppLojaVirtual.csproj|solutionrelative:src\\applojavirtual\\controllers\\categoriascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA54D644-E337-4FAD-84D1-8592FB8A7AF6}|src\\AppLojaVirtual\\AppLojaVirtual.csproj|c:\\lojavirtual\\src\\applojavirtual\\views\\categorias\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BA54D644-E337-4FAD-84D1-8592FB8A7AF6}|src\\AppLojaVirtual\\AppLojaVirtual.csproj|solutionrelative:src\\applojavirtual\\views\\categorias\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA54D644-E337-4FAD-84D1-8592FB8A7AF6}|src\\AppLojaVirtual\\AppLojaVirtual.csproj|c:\\lojavirtual\\src\\applojavirtual\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BA54D644-E337-4FAD-84D1-8592FB8A7AF6}|src\\AppLojaVirtual\\AppLojaVirtual.csproj|solutionrelative:src\\applojavirtual\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA54D644-E337-4FAD-84D1-8592FB8A7AF6}|src\\AppLojaVirtual\\AppLojaVirtual.csproj|c:\\lojavirtual\\src\\applojavirtual\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{BA54D644-E337-4FAD-84D1-8592FB8A7AF6}|src\\AppLojaVirtual\\AppLojaVirtual.csproj|solutionrelative:src\\applojavirtual\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA54D644-E337-4FAD-84D1-8592FB8A7AF6}|src\\AppLojaVirtual\\AppLojaVirtual.csproj|c:\\lojavirtual\\src\\applojavirtual\\views\\categorias\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BA54D644-E337-4FAD-84D1-8592FB8A7AF6}|src\\AppLojaVirtual\\AppLojaVirtual.csproj|solutionrelative:src\\applojavirtual\\views\\categorias\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA54D644-E337-4FAD-84D1-8592FB8A7AF6}|src\\AppLojaVirtual\\AppLojaVirtual.csproj|c:\\lojavirtual\\src\\applojavirtual\\views\\produtos\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{BA54D644-E337-4FAD-84D1-8592FB8A7AF6}|src\\AppLojaVirtual\\AppLojaVirtual.csproj|solutionrelative:src\\applojavirtual\\views\\produtos\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
@@ -50,136 +42,115 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{6324226f-61b6-4f28-92ee-18d4b5fe1e48}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\LojaVirtual\\src\\AppLojaVirtual\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "src\\AppLojaVirtual\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\LojaVirtual\\src\\AppLojaVirtual\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "src\\AppLojaVirtual\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T01:56:31.65Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\LojaVirtual\\src\\AppLojaVirtual\\Views\\Produtos\\Delete.cshtml",
+              "RelativeDocumentMoniker": "src\\AppLojaVirtual\\Views\\Produtos\\Delete.cshtml",
+              "ToolTip": "C:\\LojaVirtual\\src\\AppLojaVirtual\\Views\\Produtos\\Delete.cshtml",
+              "RelativeToolTip": "src\\AppLojaVirtual\\Views\\Produtos\\Delete.cshtml",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-11T01:40:27.191Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "bootstrap.css",
+              "DocumentMoniker": "C:\\LojaVirtual\\src\\AppLojaVirtual\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+              "RelativeDocumentMoniker": "src\\AppLojaVirtual\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+              "ToolTip": "C:\\LojaVirtual\\src\\AppLojaVirtual\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+              "RelativeToolTip": "src\\AppLojaVirtual\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+              "ViewState": "AQIAAHsPAAAAAAAAAAAAAJAPAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-04-11T01:37:40.116Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\LojaVirtual\\src\\AppLojaVirtual\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "src\\AppLojaVirtual\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\LojaVirtual\\src\\AppLojaVirtual\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "src\\AppLojaVirtual\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAABUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-11T01:28:07.606Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\MeusProjetos\\LojaVirtual\\src\\AppLojaVirtual\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "src\\AppLojaVirtual\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\MeusProjetos\\LojaVirtual\\src\\AppLojaVirtual\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "src\\AppLojaVirtual\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-08T00:11:51.049Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\MeusProjetos\\LojaVirtual\\src\\AppLojaVirtual\\Views\\Produtos\\Create.cshtml",
-              "RelativeDocumentMoniker": "src\\AppLojaVirtual\\Views\\Produtos\\Create.cshtml",
-              "ToolTip": "C:\\MeusProjetos\\LojaVirtual\\src\\AppLojaVirtual\\Views\\Produtos\\Create.cshtml",
-              "RelativeToolTip": "src\\AppLojaVirtual\\Views\\Produtos\\Create.cshtml",
-              "ViewState": "AQIAABYAAAAAAAAAAAAAADMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-07T01:02:23.831Z"
+              "Title": "CategoriasController.cs",
+              "DocumentMoniker": "C:\\LojaVirtual\\src\\AppLojaVirtual\\Controllers\\CategoriasController.cs",
+              "RelativeDocumentMoniker": "src\\AppLojaVirtual\\Controllers\\CategoriasController.cs",
+              "ToolTip": "C:\\LojaVirtual\\src\\AppLojaVirtual\\Controllers\\CategoriasController.cs",
+              "RelativeToolTip": "src\\AppLojaVirtual\\Controllers\\CategoriasController.cs",
+              "ViewState": "AQIAAGYAAAAAAAAAAAAwwAoAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T01:23:24.828Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\MeusProjetos\\LojaVirtual\\src\\AppLojaVirtual\\Views\\Produtos\\Edit.cshtml",
-              "RelativeDocumentMoniker": "src\\AppLojaVirtual\\Views\\Produtos\\Edit.cshtml",
-              "ToolTip": "C:\\MeusProjetos\\LojaVirtual\\src\\AppLojaVirtual\\Views\\Produtos\\Edit.cshtml",
-              "RelativeToolTip": "src\\AppLojaVirtual\\Views\\Produtos\\Edit.cshtml",
-              "ViewState": "AQIAACoAAAAAAAAAAAAAADcAAAAPAAAA",
+              "DocumentMoniker": "C:\\LojaVirtual\\src\\AppLojaVirtual\\Views\\Categorias\\Edit.cshtml",
+              "RelativeDocumentMoniker": "src\\AppLojaVirtual\\Views\\Categorias\\Edit.cshtml",
+              "ToolTip": "C:\\LojaVirtual\\src\\AppLojaVirtual\\Views\\Categorias\\Edit.cshtml",
+              "RelativeToolTip": "src\\AppLojaVirtual\\Views\\Categorias\\Edit.cshtml",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAiwCIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-07T02:36:35.253Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\MeusProjetos\\LojaVirtual\\src\\AppLojaVirtual\\Views\\Produtos\\Index.cshtml",
-              "RelativeDocumentMoniker": "src\\AppLojaVirtual\\Views\\Produtos\\Index.cshtml",
-              "ToolTip": "C:\\MeusProjetos\\LojaVirtual\\src\\AppLojaVirtual\\Views\\Produtos\\Index.cshtml",
-              "RelativeToolTip": "src\\AppLojaVirtual\\Views\\Produtos\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAABGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-07T01:33:43.455Z",
+              "WhenOpened": "2025-04-11T01:11:25.836Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 7,
               "Title": "Details.cshtml",
-              "DocumentMoniker": "C:\\MeusProjetos\\LojaVirtual\\src\\AppLojaVirtual\\Views\\Produtos\\Details.cshtml",
+              "DocumentMoniker": "C:\\LojaVirtual\\src\\AppLojaVirtual\\Views\\Produtos\\Details.cshtml",
               "RelativeDocumentMoniker": "src\\AppLojaVirtual\\Views\\Produtos\\Details.cshtml",
-              "ToolTip": "C:\\MeusProjetos\\LojaVirtual\\src\\AppLojaVirtual\\Views\\Produtos\\Details.cshtml",
+              "ToolTip": "C:\\LojaVirtual\\src\\AppLojaVirtual\\Views\\Produtos\\Details.cshtml",
               "RelativeToolTip": "src\\AppLojaVirtual\\Views\\Produtos\\Details.cshtml",
-              "ViewState": "AQIAABgAAAAAAAAAAAAAADMAAABRAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-07T01:30:45.349Z"
+              "WhenOpened": "2025-04-11T01:08:44.28Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Produto.cs",
-              "DocumentMoniker": "C:\\MeusProjetos\\LojaVirtual\\src\\AppLojaVirtual\\Models\\Produto.cs",
-              "RelativeDocumentMoniker": "src\\AppLojaVirtual\\Models\\Produto.cs",
-              "ToolTip": "C:\\MeusProjetos\\LojaVirtual\\src\\AppLojaVirtual\\Models\\Produto.cs",
-              "RelativeToolTip": "src\\AppLojaVirtual\\Models\\Produto.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAAwBgAAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T23:37:24.022Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "_LoginPartial.cshtml",
-              "DocumentMoniker": "C:\\MeusProjetos\\LojaVirtual\\src\\AppLojaVirtual\\Views\\Shared\\_LoginPartial.cshtml",
-              "RelativeDocumentMoniker": "src\\AppLojaVirtual\\Views\\Shared\\_LoginPartial.cshtml",
-              "ToolTip": "C:\\MeusProjetos\\LojaVirtual\\src\\AppLojaVirtual\\Views\\Shared\\_LoginPartial.cshtml",
-              "RelativeToolTip": "src\\AppLojaVirtual\\Views\\Shared\\_LoginPartial.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAA3AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-07T00:05:45.119Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\MeusProjetos\\LojaVirtual\\src\\AppLojaVirtual\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "src\\AppLojaVirtual\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\MeusProjetos\\LojaVirtual\\src\\AppLojaVirtual\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "src\\AppLojaVirtual\\Controllers\\HomeController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-07T23:09:14.79Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ProdutosController.cs",
-              "DocumentMoniker": "C:\\MeusProjetos\\LojaVirtual\\src\\AppLojaVirtual\\Controllers\\ProdutosController.cs",
-              "RelativeDocumentMoniker": "src\\AppLojaVirtual\\Controllers\\ProdutosController.cs",
-              "ToolTip": "C:\\MeusProjetos\\LojaVirtual\\src\\AppLojaVirtual\\Controllers\\ProdutosController.cs",
-              "RelativeToolTip": "src\\AppLojaVirtual\\Controllers\\ProdutosController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-07T23:43:35.922Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
               "Title": "Delete.cshtml",
-              "DocumentMoniker": "C:\\MeusProjetos\\LojaVirtual\\src\\AppLojaVirtual\\Views\\Produtos\\Delete.cshtml",
-              "RelativeDocumentMoniker": "src\\AppLojaVirtual\\Views\\Produtos\\Delete.cshtml",
-              "ToolTip": "C:\\MeusProjetos\\LojaVirtual\\src\\AppLojaVirtual\\Views\\Produtos\\Delete.cshtml",
-              "RelativeToolTip": "src\\AppLojaVirtual\\Views\\Produtos\\Delete.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAmAAAA",
+              "DocumentMoniker": "C:\\LojaVirtual\\src\\AppLojaVirtual\\Views\\Categorias\\Delete.cshtml",
+              "RelativeDocumentMoniker": "src\\AppLojaVirtual\\Views\\Categorias\\Delete.cshtml",
+              "ToolTip": "C:\\LojaVirtual\\src\\AppLojaVirtual\\Views\\Categorias\\Delete.cshtml",
+              "RelativeToolTip": "src\\AppLojaVirtual\\Views\\Categorias\\Delete.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-07T02:24:32.866Z"
+              "WhenOpened": "2025-04-11T01:05:32.708Z",
+              "EditorCaption": ""
             }
           ]
         }

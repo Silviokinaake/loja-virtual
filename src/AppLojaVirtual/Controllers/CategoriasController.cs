@@ -1,45 +1,49 @@
-﻿using AppLojaVirtual.Data;
-using AppLojaVirtual.Models;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using AppLojaVirtual.Data;
+using AppLojaVirtual.Models;
 
 namespace AppLojaVirtual.Controllers
 {
-    //[Authorize]
-    [Route("meus-produtos")]
-    public class ProdutosController : Controller
+    [Route("categorias")]
+    public class CategoriasController : Controller
     {
         private readonly ApplicationDbContext _context;
 
-        public ProdutosController(ApplicationDbContext context)
+        public CategoriasController(ApplicationDbContext context)
         {
             _context = context;
         }
 
-        //[AllowAnonymous]
         public async Task<IActionResult> Index()
         {
-            return _context.Produto !=null?
-                View(await _context.Produto.ToListAsync()):
-                Problem("Entity set 'ApplicationDbContext.Produto'  is null.");
+                    return _context.Categoria != null ?
+            View(await _context.Categoria.ToListAsync()) :
+            Problem("Entity set 'ApplicationDbContext.Categoria'  is null.");
         }
 
         [Route("detalhes/{id:int}")]
-        public async Task<IActionResult> Details(int id)
+        public async Task<IActionResult> Details(int? id)
         {
-            if (_context.Produto == null)
+            if (id == null)
             {
                 return NotFound();
             }
 
-            var produto = await _context.Produto
+            var categoria = await _context.Categoria
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (produto == null)
+
+            if (categoria == null)
             {
                 return NotFound();
             }
 
-            return View(produto);
+            return View(categoria);
         }
 
         [Route("novo")]
@@ -50,42 +54,39 @@ namespace AppLojaVirtual.Controllers
 
         [HttpPost("novo")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Nome,Descricao,Preco,QuantidadeEstoque,Categoria,ImagemUrl")] Produto produto)
+        public async Task<IActionResult> Create([Bind("Id,Nome")] Categoria categoria)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(produto);
+                _context.Add(categoria);
                 await _context.SaveChangesAsync();
-
-                TempData["Sucesso"] = "Produto cadastrado com sucesso!";
                 return RedirectToAction(nameof(Index));
             }
-
-            return View(produto);
+            return View(categoria);
         }
 
         [Route("editar/{id:int}")]
         public async Task<IActionResult> Edit(int id)
         {
-            if (_context.Produto == null)
+            if (_context.Categoria == null)
             {
                 return NotFound();
             }
 
-            var produto = await _context.Produto.FindAsync(id);
-            if (produto == null)
+            var categoria = await _context.Categoria.FindAsync(id);
+            if (categoria == null)
             {
                 return NotFound();
             }
 
-            return View(produto);
+            return View(categoria);
         }
 
         [HttpPost("editar/{id:int}")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int? id, [Bind("Id,Nome,Descricao,Preco,QuantidadeEstoque,Categoria,ImagemUrl")] Produto produto)
+        public async Task<IActionResult> Edit(int? id, [Bind("Id,Nome")] Categoria categoria)
         {
-            if (id != produto.Id)
+            if (id != categoria.Id)
             {
                 return NotFound();
             }
@@ -94,12 +95,12 @@ namespace AppLojaVirtual.Controllers
             {
                 try
                 {
-                    _context.Update(produto);
+                    _context.Update(categoria);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!ProdutoExists(produto.Id))
+                    if (!CategoriaExists(categoria.Id))
                     {
                         return NotFound();
                     }
@@ -109,51 +110,52 @@ namespace AppLojaVirtual.Controllers
                     }
                 }
 
-                TempData["Sucesso"] = "Produto editado com sucesso!";
+                TempData["Sucesso"] = "Categoria editada com sucesso!";
+
                 return RedirectToAction(nameof(Index));
             }
-            return View(produto);
+            return View(categoria);
         }
 
         [Route("Excluir/{id:int}")]
-        public async Task<IActionResult> Delete(int id)
+        public async Task<IActionResult> Delete(int? id)
         {
-            if (_context.Produto == null)
+            if (_context.Categoria == null)
             {
                 return NotFound();
             }
 
-            var produto = await _context.Produto
+            var categoria = await _context.Categoria
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (produto == null)
+            if (categoria == null)
             {
                 return NotFound();
             }
 
-            return View(produto);
+            return View(categoria);
         }
 
         [HttpPost("Excluir/{id:int}"), ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            if (_context.Produto == null)
+            if (_context.Categoria == null)
             {
-                return Problem("Entity set 'ApplicationDbContext.Produto'  is null.");
+                return Problem("Entity set 'ApplicationDbContext.Categoria'  is null.");
             }
-            var produto = await _context.Produto.FindAsync(id);
-            if (produto != null)
+            var categoria = await _context.Categoria.FindAsync(id);
+            if (categoria != null)
             {
-                _context.Produto.Remove(produto);
+                _context.Categoria.Remove(categoria);
             }
 
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool ProdutoExists(int? id)
+        private bool CategoriaExists(int id)
         {
-            return _context.Produto.Any(e => e.Id == id);
+            return _context.Categoria.Any(e => e.Id == id);
         }
     }
 }

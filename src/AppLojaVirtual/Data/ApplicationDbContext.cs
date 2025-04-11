@@ -11,5 +11,6 @@ namespace AppLojaVirtual.Data
         {
         }
         public DbSet<AppLojaVirtual.Models.Produto> Produto { get; set; } = default!;
+        public DbSet<AppLojaVirtual.Models.Categoria> Categoria { get; set; } = default!;
     }
 }

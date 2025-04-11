@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AppLojaVirtual")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c17073230326c627001d65587a45e9368ecf9021")]
 [assembly: System.Reflection.AssemblyProductAttribute("AppLojaVirtual")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AppLojaVirtual")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
