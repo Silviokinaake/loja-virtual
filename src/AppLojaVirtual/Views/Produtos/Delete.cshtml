@@ -50,6 +50,13 @@
             @Html.DisplayFor(model => model.ImagemUrl)
         </dd>
     </dl>
+
+    @if (!string.IsNullOrEmpty(Model.ImagemUrl))
+    {
+        <div class="form-group">
+            <img src="@Model.ImagemUrl" alt="Imagem do produto" style="max-height: 200px;" />
+        </div>
+    }
     
     <form asp-action="Delete">
         <input type="hidden" asp-for="Id" />
@@ -57,3 +64,9 @@
         <a asp-action="Index" class="btn btn-warning">Voltar</a>
     </form>
 </div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

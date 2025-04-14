@@ -47,6 +47,12 @@
             @Html.DisplayFor(model => model.ImagemUrl)
         </dd>
     </dl>
+    @if (!string.IsNullOrEmpty(Model.ImagemUrl))
+    {
+        <div class="form-group">
+            <img src="@Model.ImagemUrl" alt="Imagem do produto" style="max-height: 200px;" />
+        </div>
+    }
 </div>
 <div>
     <a class="btn btn-warning" asp-action="Edit" asp-route-id="@Model?.Id">Editar</a>

@@ -10,7 +10,7 @@
 {
     var mensagem = TempData["Sucesso"] != null ? TempData["Sucesso"] : ViewData["Sucesso"];
 
-    <div styly="padding-top: 15px"></div>
+    <div style="padding-top: 15px"></div>
 
     <div id="msg-box" class="alert alert-success">
         <h4 id=" msgRetorno">@Html.Raw(mensagem)</h4>
@@ -18,7 +18,7 @@
 }
 
 <p>
-    <a class="btn btn-primary" asp-action="Create"><spam class="fa fa-plus"></spam>Novo</a>
+    <a class="btn btn-primary" asp-action="Create"><span class="fa fa-plus"></span>Novo</a>
 </p>
 <table class="table">
     <thead>
@@ -45,32 +45,36 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Nome)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Descricao)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Preco)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.QuantidadeEstoque)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Categoria)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ImagemUrl)
-            </td>
-            <td>
-                <a asp-action="Details" class="btn btn-warning" asp-route-id="@item.Id"><spam class="fa fa-search"></spam>Detalhes</a>
-                <a asp-action="Edit" class="btn btn-info" asp-route-id="@item.Id"><spam class="fa fa-pencil-alt"></spam>Editar</a> 
-                <a asp-action="Delete" class="btn btn-danger" asp-route-id="@item.Id"><spam class="fa fa-trash"></spam>Excluir</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nome)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Descricao)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Preco)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.QuantidadeEstoque)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Categoria)
+                </td>
+                <td>
+                    @if (!string.IsNullOrEmpty(item.ImagemUrl))
+                    {
+                        <img src="@item.ImagemUrl" alt="Imagem do produto" style="max-height: 100px;" />
+                    }
+                </td>
+                <td>
+                    <a asp-action="Details" class="btn btn-warning" asp-route-id="@item.Id"><span class="fa fa-search"></span>Detalhes</a>
+                    <a asp-action="Edit" class="btn btn-info" asp-route-id="@item.Id"><span class="fa fa-pencil-alt"></span>Editar</a>
+                    <a asp-action="Delete" class="btn btn-danger" asp-route-id="@item.Id"><span class="fa fa-trash"></span>Excluir</a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>

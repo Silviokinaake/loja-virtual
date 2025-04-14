@@ -19,8 +19,8 @@ namespace AppLojaVirtual.Controllers
         //[AllowAnonymous]
         public async Task<IActionResult> Index()
         {
-            return _context.Produto !=null?
-                View(await _context.Produto.ToListAsync()):
+            return _context.Produto != null ?
+                View(await _context.Produto.ToListAsync()) :
                 Problem("Entity set 'ApplicationDbContext.Produto'  is null.");
         }
 
@@ -50,10 +50,27 @@ namespace AppLojaVirtual.Controllers
 
         [HttpPost("novo")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Nome,Descricao,Preco,QuantidadeEstoque,Categoria,ImagemUrl")] Produto produto)
+        public async Task<IActionResult> Create([Bind("Id,Nome,Descricao,Preco,QuantidadeEstoque,Categoria,ImagemUrl")] Produto produto, IFormFile imagem)
         {
             if (ModelState.IsValid)
             {
+                if (imagem != null && imagem.Length > 0)
+                {
+                    var caminhoPasta = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/imagens");
+                    if (!Directory.Exists(caminhoPasta))
+                        Directory.CreateDirectory(caminhoPasta);
+
+                    var nomeArquivo = Guid.NewGuid().ToString() + Path.GetExtension(imagem.FileName);
+                    var caminhoCompleto = Path.Combine(caminhoPasta, nomeArquivo);
+
+                    using (var stream = new FileStream(caminhoCompleto, FileMode.Create))
+                    {
+                        await imagem.CopyToAsync(stream);
+                    }
+
+                    produto.ImagemUrl = "/imagens/" + nomeArquivo;
+                }
+
                 _context.Add(produto);
                 await _context.SaveChangesAsync();
 
@@ -83,36 +100,72 @@ namespace AppLojaVirtual.Controllers
 
         [HttpPost("editar/{id:int}")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int? id, [Bind("Id,Nome,Descricao,Preco,QuantidadeEstoque,Categoria,ImagemUrl")] Produto produto)
+        public async Task<IActionResult> Edit(int? id, [Bind("Id,Nome,Descricao,Preco,QuantidadeEstoque,Categoria,ImagemUrl")] Produto produto, IFormFile? imagem)
         {
             if (id != produto.Id)
-            {
                 return NotFound();
+            if (!ModelState.IsValid)
+            {
+                foreach (var modelState in ModelState)
+                {
+                    foreach (var error in modelState.Value.Errors)
+                    {
+                        Console.WriteLine($"Erro no campo {modelState.Key}: {error.ErrorMessage}");
+                    }
+                }
             }
 
             if (ModelState.IsValid)
             {
                 try
                 {
-                    _context.Update(produto);
+                    var produtoExistente = await _context.Produto.FindAsync(id);
+
+                    if (produtoExistente == null)
+                        return NotFound();
+
+                    // Atualiza os campos básicos
+                    produtoExistente.Nome = produto.Nome;
+                    produtoExistente.Descricao = produto.Descricao;
+                    produtoExistente.Preco = produto.Preco;
+                    produtoExistente.QuantidadeEstoque = produto.QuantidadeEstoque;
+                    produtoExistente.Categoria = produto.Categoria;
+
+                    // Se houver uma nova imagem, substitui a anterior
+                    if (imagem != null && imagem.Length > 0)
+                    {
+                        var caminhoPasta = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/imagens");
+                        if (!Directory.Exists(caminhoPasta))
+                            Directory.CreateDirectory(caminhoPasta);
+
+                        var nomeArquivo = Guid.NewGuid().ToString() + Path.GetExtension(imagem.FileName);
+                        var caminhoCompleto = Path.Combine(caminhoPasta, nomeArquivo);
+
+                        using (var stream = new FileStream(caminhoCompleto, FileMode.Create))
+                        {
+                            await imagem.CopyToAsync(stream);
+                        }
+
+                        produtoExistente.ImagemUrl = "/imagens/" + nomeArquivo;
+                    }
+
                     await _context.SaveChangesAsync();
+
+                    TempData["Sucesso"] = "Produto editado com sucesso!";
+                    return RedirectToAction(nameof(Index));
                 }
                 catch (DbUpdateConcurrencyException)
                 {
                     if (!ProdutoExists(produto.Id))
-                    {
                         return NotFound();
-                    }
                     else
-                    {
                         throw;
-                    }
                 }
-
-                TempData["Sucesso"] = "Produto editado com sucesso!";
-                return RedirectToAction(nameof(Index));
             }
-            return View(produto);
+
+            // Retorna o produto já existente com ImagemUrl preservado, caso haja erro de validação
+            var produtoComImagem = await _context.Produto.FindAsync(id);
+            return View(produtoComImagem);
         }
 
         [Route("Excluir/{id:int}")]
@@ -145,6 +198,8 @@ namespace AppLojaVirtual.Controllers
             if (produto != null)
             {
                 _context.Produto.Remove(produto);
+
+                TempData["Sucesso"] = "Produto excluído com sucesso!";
             }
 
             await _context.SaveChangesAsync();
