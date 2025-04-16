@@ -75,6 +75,14 @@ body {
     padding: 5px;
 }
 
+.card {
+    transition: transform 0.2s ease;
+}
+
+    .card:hover {
+        transform: scale(1.08);
+    }
+
 .form-inline button:hover {
     text-decoration: underline;
 }
@@ -106,6 +114,7 @@ body {
     .btn-custom-gray:hover {
         background-color: #8a2be2;
         color: white;
+        font-weight: bold;
     }
 
 .card {
@@ -124,13 +133,14 @@ body {
 }
 
 .nome-produto {
-    color: black;
+    color: dimgrey;
     max-width: 70%;
     display: inline-block;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
     background-color: white;
+    font-weight: bold;
 }
 
 .card-title {
@@ -144,4 +154,21 @@ body {
 
 .card-title-custom {
     font-size: 0.9rem;
+}
+
+footer .container-fluid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    background-color: red;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.logo-destaque {
+    color: greenyellow !important;
+    font-size: 2.1rem;
+    font-weight: bold;
 }

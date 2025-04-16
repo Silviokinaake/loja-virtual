@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "jkASkuxUtMLUOyf+ob9elsb1rbqOBTS90IUzzadq4g0=",
+  "Hash": "cxmeKPVS6qQIEwi25XZRUX6bOWUSyfafYZKRvzftfxw=",
   "Source": "AppLojaVirtual",
   "BasePath": "_content/AppLojaVirtual",
   "Mode": "Default",
@@ -243,6 +243,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\imagens\\956c9305-6465-4e72-bff4-95f2051bc6d3.webp"
+    },
+    {
+      "Identity": "C:\\LojaVirtual\\src\\AppLojaVirtual\\wwwroot\\imagens\\a3a32276-9092-47c3-a55e-f7b9b53d2d27.jpg",
+      "SourceId": "AppLojaVirtual",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\LojaVirtual\\src\\AppLojaVirtual\\wwwroot\\",
+      "BasePath": "_content/AppLojaVirtual",
+      "RelativePath": "imagens/a3a32276-9092-47c3-a55e-f7b9b53d2d27.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagens\\a3a32276-9092-47c3-a55e-f7b9b53d2d27.jpg"
     },
     {
       "Identity": "C:\\LojaVirtual\\src\\AppLojaVirtual\\wwwroot\\imagens\\b04aa064-cb33-4c52-adde-2639ea330f7e.jpg",
