@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: Microsoft.AspNetCore.Identity.UI.UIFrameworkAttribute("Bootstrap5")]
 [assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("aspnet-AppLojaVirtual-492d3800-50f8-41d1-a853-e8d1de781b58")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("AppLojaVirtual")]
-[assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
+[assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8c148cba98c28b42087b339cfff7962dd545b9d2")]
 [assembly: System.Reflection.AssemblyProductAttribute("AppLojaVirtual")]
