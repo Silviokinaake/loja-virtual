@@ -1,3 +1,14 @@
+Devido a um problema cardíaco tive que me afastar de minha rotina normal, inclusive os estudos no primeiro Módulo. Pensei em desistir dessa MBA, mas agora já recuperado, decidi retornar com dedicação total.
+A primeira faze do projeto fiz deitado em uma cama, e sei que minha primeira entrega do primeiro módulo não foi boa e a segunda não foi feita. 
+Mas estou decidido a encarar uma recuperação do módulo 1 ou refazê-lo em outro momento se possível (Tenho comprovantes de 4 dias de internação na UTI).
+No dia 14 de Maio recebi a liberação do meu médico para retornar minhas atividades normais. Por isso no segundo módulo será possível cumprir todas os cursos e entregas com dedicação total.
+Estou escrevendo isso apenas para esclarecer minha ausência no primeiro módulo.
+
+Esse projeto passou por muitas mudanças por isso foi necesssário criar umnovo repositorio. Segue abaixo novo repositorio que estou dando continuidade.
+https://github.com/Silviokinaake/loja-virtual-repositorio
+
+
+
 [Loja Virtual] - Aplicação de Blog Simples com MVC e API RESTful
 
 1. Apresentação
